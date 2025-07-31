@@ -1,0 +1,78 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+header *,
+nav ul *{
+    color: var(--primary-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+
+nav ul li:hover a {
+    text-decoration: underline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+#featured-plants {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#featured-plants .plant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.plant img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plant .info {
+    background-color: #f1f1f136;
+    padding: 30px;
+}
