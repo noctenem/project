@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #0f0f0f;
-    --secondary-color: #f9f9f9;
+    --primary-color: #368f8b;
+    --secondary-color: #f3dfc1;
+    --text-primary: #160f29;
 }
 
 * {
@@ -12,6 +13,11 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
     list-style: none;
+    color: var(--text-primary);
+}
+
+body {
+    background-color:var(--secondary-color);
 }
 
 header, footer {
@@ -40,6 +46,15 @@ main section ul li, main section h2 {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+a {
+    color: #246A73;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
